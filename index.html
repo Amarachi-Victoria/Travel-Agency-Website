@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelar - Your Next Destination</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                Travelar
+            </div>
+            <nav class="main-nav">
+                <a href="#home">Home</a>
+                <a href="#about">About us</a>
+                <a href="#trips">Popular trips</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="header-actions">
+                 <button class="btn btn-primary login-btn">Login</button>
+                 <button id="menu-btn" class="menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                 </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu">
+            <a href="#home">Home</a>
+            <a href="#about">About us</a>
+            <a href="#trips">Popular trips</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+            <button class="btn btn-primary btn-block">Login</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1>Pick The Best City For You</h1>
+                <h2>Our Destinations</h2>
+                <p>
+                    Uncover hidden gems and legendary wonders; let us meticulously craft your next unforgettable journey beyond the map, starting today
+                </p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary">View More</button>
+                    <button class="btn btn-secondary">More Info</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search Section -->
+        <section class="search-section">
+            <div class="container">
+                <div class="search-container">
+                    <form class="search-form">
+                        <div class="form-group">
+                            <label for="destination">Where to...</label>
+                            <input type="text" id="destination" placeholder="e.g. Paris" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="date">dd-mm-yy</label>
+                            <input type="date" id="date" class="form-control">
+                        </div>
+                        <div class="form-group">
+                             <label for="travel-type">Travel Type</label>
+                            <select id="travel-type" class="form-control">
+                                <option>Adventure</option>
+                                <option>Relaxation</option>
+                                <option>Cultural</option>
+                                <option>Business</option>
+                            </select>
+                        </div>
+                         <button type="submit" class="btn btn-primary btn-block">Find Now</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Trips Section -->
+        <section id="trips" class="page-section">
+            <div class="container">
+                <h2 class="section-title">Popular Trips</h2>
+                <div class="trips-grid">
+                    <div class="trip-card">
+                        <img src="./image/Greece.jpg" alt="Santorini, Greece">
+                        <div class="trip-card-content">
+                            <h3>Santorini, Greece</h3>
+                            <p>A beautiful island with stunning sunsets and white-washed villages.</p>
+                            <div class="trip-card-footer">
+                                <span>$2000</span>
+                                <button class="btn btn-primary">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trip-card">
+                        <img src="image/Japan.jpg" alt="Kyoto, Japan">
+                        <div class="trip-card-content">
+                            <h3>Kyoto, Japan</h3>
+                            <p>Experience traditional Japanese culture, temples, and gardens.</p>
+                            <div class="trip-card-footer">
+                                <span>$2500</span>
+                                <button class="btn btn-primary">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trip-card">
+                        <img src="image/RomePic.jpg" alt="Rome, Italy">
+                        <div class="trip-card-content">
+                            <h3>Rome, Italy</h3>
+                            <p>Explore ancient ruins, art, and enjoy delicious Italian food.</p>
+                            <div class="trip-card-footer">
+                                <span>$1800</span>
+                                <button class="btn btn-primary">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="page-section bg-light">
+            <div class="container about-container">
+                <div class="about-image">
+                    <img src="image/gray-sky-mountain-daytime.jpg" alt="About Travelar">
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title">About Travelar</h2>
+                    <p>We are a passionate team of travel experts dedicated to creating unforgettable travel experiences. Our mission is to help you discover the world and create memories that will last a lifetime.</p>
+                    <p>With years of experience and a commitment to excellence, we provide personalized travel planning and exceptional customer service.</p>
+                    <button class="btn btn-primary">Read More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="page-section">
+            <div class="container">
+                <h2 class="section-title">Our Gallery</h2>
+                <div class="gallery-grid">
+                    <img src="image/Greece.jpg" alt="Gallery Image 1">
+                    <img src="image/Japan.jpg" alt="Gallery Image 2">
+                    <img src="image/RomePic.jpg" alt="Gallery Image 3">
+                    <img src="image/gray-sky-mountain-daytime.jpg" alt="Gallery Image 4">
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="page-section bg-dark">
+            <div class="container">
+                <h2 class="section-title text-white">Contact Us</h2>
+                <div class="contact-container">
+                    <form class="contact-form">
+                        <input type="text" placeholder="Your Name" class="form-control">
+                        <input type="email" placeholder="Your Email" class="form-control">
+                        <textarea placeholder="Your Message" class="form-control" rows="5"></textarea>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer-section">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Travelar</div>
+                <div class="footer-nav">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#trips">Trips</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Travelar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
